@@ -12,6 +12,7 @@
 #   }
 #   array
 # end
+require "pry"
 
 def nyc_pigeon_organizer(data)
   hash = {}
@@ -31,7 +32,8 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
-  puts hash
+  binding.pry
+  hash
 end
 #
 # pigeon_data = {
