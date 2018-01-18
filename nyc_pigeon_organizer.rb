@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
-  hash
+  puts hash
 end
 #
 # pigeon_data = {
