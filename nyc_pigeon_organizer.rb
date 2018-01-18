@@ -20,15 +20,13 @@ def nyc_pigeon_organizer(data)
     att_hash.each{|value, name_array|
       name_array.each{|name|
         binding.pry
-        case nil
-        when hash[name]
+        if hash[name] == nil
           hash[name]={}
-        when hash[name][attribute]
+        end
+        if hash[name][attribute] == nil
           hash[name][attribute] = [value.to_s]
-        else
-          if hash[name][attribute] != [value.to_s]
+        elsif hash[name][attribute] != [value.to_s]
             hash[name][attribute] << value.to_s
-          end
         end
       }
     }
