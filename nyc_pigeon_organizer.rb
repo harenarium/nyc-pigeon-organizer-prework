@@ -26,8 +26,8 @@ def nyc_pigeon_organizer(data)
         when hash[name][attribute]
           hash[name][attribute] = [value.to_s]
         else
-          if hash[name][attribute] != [value]
-            hash[name][attribute] << value
+          if hash[name][attribute] != [value.to_s]
+            hash[name][attribute] << value.to_s
           end
         end
       }
