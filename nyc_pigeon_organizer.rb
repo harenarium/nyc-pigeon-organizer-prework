@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
         when hash[name]
           hash[name]={}
         when hash[name][attribute]
-          hash[name][attribute] = [value]
+          hash[name][attribute] = [value.to_s]
         else
           if hash[name][attribute] != [value]
             hash[name][attribute] << value
@@ -95,3 +95,11 @@ end
 #     :lives => ["Central Park"]
 #   }
 # }
+
+{"Theo"=>{:color=>[:grey], :gender=>[:male], :lives=>["Subway"]},
+ "Peter Jr."=>{:color=>[:grey], :gender=>[:male], :lives=>["Library"]},
+ "Lucky"=>{:gender=>[:male], :lives=>["Central Park"]},
+ "Ms. K"=>{:color=>[:white], :gender=>[:female], :lives=>["Central Park"]},
+ "Queenie"=>{:color=>[:brown], :gender=>[:female], :lives=>["Subway"]},
+ "Andrew"=>{:gender=>[:male], :lives=>["City Hall"]},
+ "Alex"=>{:color=>[:brown], :gender=>[:male], :lives=>["Central Park"]}}
