@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
   data.each{ |attribute, att_hash|
     att_hash.each{|value, name_array|
       name_array.each{|name|
-        binding.pry
+        # binding.pry
         if hash[name] == nil
           hash[name]={}
         end
